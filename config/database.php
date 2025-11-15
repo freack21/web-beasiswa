@@ -1,8 +1,5 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'beasiswa');
+require_once __DIR__ . '/db_info.php';
 
 class Database
 {
