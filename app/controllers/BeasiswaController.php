@@ -58,13 +58,13 @@ class BeasiswaController extends Controller
       $beasiswaModel = $this->model('Beasiswa');
 
       if ($beasiswaModel->tambahPendaftaran($data)) {
-        header('Location: ' . BASEURL . '/BeasiswaController/hasil');
+        header('Location: ' . BASEURL . '/hasil');
         exit;
       } else {
         die('Something went wrong');
       }
     } else {
-      $this->redirect('BeasiswaController/registrasi');
+      $this->redirect('registrasi');
     }
   }
 

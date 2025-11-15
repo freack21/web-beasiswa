@@ -1,4 +1,4 @@
-<?php require_once '../app/views/templates/header.php'; ?>
+<?php require_once __DIR__ . '/../templates/header.php'; ?>
 
 <div class="container">
   <div class="page-header">
@@ -25,7 +25,7 @@
   <?php endif; ?>
 
   <div class="form-container">
-    <form action="<?= BASEURL; ?>/BeasiswaController/daftar" method="POST" enctype="multipart/form-data" id="registrationForm">
+    <form action="<?= BASEURL; ?>/daftar" method="POST" enctype="multipart/form-data" id="registrationForm">
 
       <div class="form-group">
         <label for="nama">
@@ -146,4 +146,4 @@
   </div>
 </div>
 
-<?php require_once '../app/views/templates/footer.php'; ?>
+<?php require_once __DIR__ . '/../templates/footer.php'; ?>

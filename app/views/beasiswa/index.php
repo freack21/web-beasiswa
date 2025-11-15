@@ -1,4 +1,4 @@
-<?php require_once '../app/views/templates/header.php'; ?>
+<?php require_once __DIR__ . '/../templates/header.php'; ?>
 
 <div class="container">
   <div class="page-header">
@@ -56,11 +56,11 @@
     <p style="color: var(--text-light); margin-bottom: 20px;">
       Pastikan Anda telah memenuhi persyaratan dan siapkan dokumen yang diperlukan
     </p>
-    <a href="<?= BASEURL; ?>/BeasiswaController/registrasi" class="btn btn-primary">
+    <a href="<?= BASEURL; ?>/registrasi" class="btn btn-primary">
       <i class="fas fa-edit"></i>
       Daftar Sekarang
     </a>
   </div>
 </div>
 
-<?php require_once '../app/views/templates/footer.php'; ?>
+<?php require_once __DIR__ . '/../templates/footer.php'; ?>

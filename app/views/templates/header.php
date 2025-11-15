@@ -14,25 +14,25 @@
 <body>
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="<?= BASEURL; ?>/BeasiswaController/index" class="navbar-brand">
+      <a href="<?= BASEURL; ?>/index" class="navbar-brand">
         <i class="fas fa-graduation-cap"></i>
         Portal Beasiswa
       </a>
       <ul class="navbar-menu">
         <li>
-          <a href="<?= BASEURL; ?>/BeasiswaController/index" class="<?= ($data['active_page'] ?? '') == 'daftar' ? 'active' : '' ?>">
+          <a href="<?= BASEURL; ?>/index" class="<?= ($data['active_page'] ?? '') == 'daftar' ? 'active' : '' ?>">
             <i class="fas fa-list"></i>
             Daftar Beasiswa
           </a>
         </li>
         <li>
-          <a href="<?= BASEURL; ?>/BeasiswaController/registrasi" class="<?= ($data['active_page'] ?? '') == 'registrasi' ? 'active' : '' ?>">
+          <a href="<?= BASEURL; ?>/registrasi" class="<?= ($data['active_page'] ?? '') == 'registrasi' ? 'active' : '' ?>">
             <i class="fas fa-edit"></i>
             Registrasi
           </a>
         </li>
         <li>
-          <a href="<?= BASEURL; ?>/BeasiswaController/hasil" class="<?= ($data['active_page'] ?? '') == 'hasil' ? 'active' : '' ?>">
+          <a href="<?= BASEURL; ?>/hasil" class="<?= ($data['active_page'] ?? '') == 'hasil' ? 'active' : '' ?>">
             <i class="fas fa-check-circle"></i>
             Hasil
           </a>

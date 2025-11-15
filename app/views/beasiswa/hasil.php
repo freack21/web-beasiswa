@@ -1,4 +1,4 @@
-<?php require_once '../app/views/templates/header.php'; ?>
+<?php require_once __DIR__ . '/../templates/header.php'; ?>
 
 <div class="container">
   <div class="page-header">
@@ -12,15 +12,15 @@
         <table class="table">
           <thead>
             <tr>
-              <th><i class="fas fa-hashtag"></i> No</th>
-              <th><i class="fas fa-user"></i> Nama</th>
-              <th><i class="fas fa-envelope"></i> Email</th>
-              <th><i class="fas fa-phone"></i> No. HP</th>
-              <th><i class="fas fa-calendar"></i> Semester</th>
-              <th><i class="fas fa-chart-line"></i> IPK</th>
-              <th><i class="fas fa-graduation-cap"></i> Beasiswa</th>
-              <th><i class="fas fa-file"></i> Berkas</th>
-              <th><i class="fas fa-info-circle"></i> Status</th>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Email</th>
+              <th>HP</th>
+              <th>Semester</th>
+              <th>IPK</th>
+              <th>Beasiswa</th>
+              <th>Berkas</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>
@@ -44,7 +44,7 @@
                   <?php if ($item->berkas): ?>
                     <a href="<?= BASEURL; ?>/uploads/<?= htmlspecialchars($item->berkas) ?>"
                       target="_blank"
-                      style="color: var(--primary-color); text-decoration: none;">
+                      style="color: var(--primary-color); text-decoration: none; display: flex;align-items: center;gap: 0.5rem;">
                       <i class="fas fa-download"></i> Lihat
                     </a>
                   <?php else: ?>
@@ -74,7 +74,7 @@
         <i class="fas fa-inbox"></i>
         <h3>Belum Ada Pendaftaran</h3>
         <p>Belum ada data pendaftaran beasiswa yang masuk.</p>
-        <a href="<?= BASEURL; ?>/BeasiswaController/registrasi" class="btn btn-primary" style="margin-top: 20px;">
+        <a href="<?= BASEURL; ?>/registrasi" class="btn btn-primary" style="margin-top: 20px;">
           <i class="fas fa-edit"></i>
           Daftar Sekarang
         </a>
@@ -83,4 +83,4 @@
   </div>
 </div>
 
-<?php require_once '../app/views/templates/footer.php'; ?>
+<?php require_once __DIR__ . '/../templates/footer.php'; ?>
