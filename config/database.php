@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__ . '/db_info.php';
-
 class Database
 {
   private $host = DB_HOST;
